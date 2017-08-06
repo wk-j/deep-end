@@ -1,26 +1,18 @@
 const $ = require("jquery");
 
-const source = [
-    "https://www.youtube.com/embed/NCXfKyfpBKI?ecver=1&autoplay=1&controls=0&showinfo=0&rel=0",
-    "https://www.youtube.com/embed/lBN9VDFDvOk?ecver=1&autoplay=1&controls=0&showinfo=0&rel=0",
-    "https://www.youtube.com/embed/zeP7bqMySmE?ecver=1&autoplay=1&controls=0&showinfo=0&rel=0",
-];
+const url = "https://www.youtube.com/embed/{id}?ecver=1&autoplay=1&controls=0&showinfo=1&rel=0&modestbranding=1";
+const source = [ "NCXfKyfpBKI", "lBN9VDFDvOk", "zeP7bqMySmE" ];
+const links = [ "#s1", "#s2", "#s3" ];
+const createUrl = (id) => url.replace("{id}", id);
 
-const links = [
-    "#s1", 
-    "#s2", 
-    "#s3"
-];
+$(document).ready(() => $("#video").attr("src", createUrl(source[0])));
+$("#facebookButton").click(() => window.open("https://www.facebook.com/JanninaW", "_blank"));
 
 links.forEach((x, i) => {
     const button = $(x);
     button.click(() => {
         button.addClass("active");
-        $("#video").attr("src", source[i]);
+        $("#video").attr("src", createUrl(source[i]));
         links.filter(k => k != x).forEach(k => $(k).removeClass("active"));
     })
-});
-
-$("#facebookButton").click(() => {
-    window.open("https://www.facebook.com/JanninaW", "_blank");
 });
