@@ -8,7 +8,8 @@
         "electron-packager": "^8.7.2"
     },
     "dependencies": {
-        "jquery": "^3.2.1"
+        "jquery": "^3.2.1",
+        "photonkit": "^0.1.2"
     },
     "scripts": {
         "package": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=images/photo.icns --prune=true --out=builds"

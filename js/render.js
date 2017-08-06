@@ -7,7 +7,7 @@ const source = [
 
 const links = ["#s1", "#s2", "#s3"];
 
-links.forEach((x,i) => {
+links.forEach((x, i) => {
     const button = $(x);
     button.click(() => {
         button.addClass("active");
@@ -17,5 +17,5 @@ links.forEach((x,i) => {
 });
 
 $("#facebookButton").click(() => {
-    window.open("https://www.facebook.com/JanninaW","_blank");
+    window.open("https://www.facebook.com/JanninaW", "_blank");
 });
