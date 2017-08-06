@@ -9,6 +9,15 @@
 <body>
 
     <div class="window">
+
+        <header class="toolbar toolbar-header">
+            <div class="toolbar-actions">
+                <button class="btn btn-default pull-right" id="closeButton">
+                    <span class="icon icon-facebook"></span>
+                </button>
+            </div>
+        </header>
+        <!--
         <header class="toolbar toolbar-header">
             <div class="toolbar-actions">
                 <button class="btn btn-default" id="facebookButton"> 
@@ -19,25 +28,26 @@
                 </button>
             </div>
         </header>
+        -->
 
         <div class="window-content">
-            <div class="pane c-menu">
+            <div class="pane">
                 <ul class="list-group">
-                    <li class="list-group-item active">
+                    <li class="list-group-item active" id="s1">
                         <img class="img-circle media-object pull-left" src="images/photo.jpg" width="32" height="32">
                         <div class="media-body">
                             <strong>Deep End</strong>
                             <p>Jannine Weigel</p>
                         </div>
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="s2">
                         <img class="img-circle media-object pull-left" src="images/photo.jpg" width="32" height="32">
                         <div class="media-body">
                             <strong>Heart Stop</strong>
                             <p>Jannine Weigel</p>
                         </div>
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="s3">
                         <img class="img-circle media-object pull-left" src="images/photo.jpg" width="32" height="32">
                         <div class="media-body">
                             <strong>Strangled Love</strong>
@@ -47,11 +57,11 @@
                 </ul>
             </div>
             <div class="pane">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/NCXfKyfpBKI?ecver=1" frameborder="0" allowfullscreen></iframe>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/NCXfKyfpBKI?ecver=1" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
         <footer class="toolbar toolbar-footer">
-            <h1 class="title">Deep End @2017</h1>
+            <h1 class="title">Deep End - Jannine Weigel @2017</h1>
         </footer>
     </div>
 
