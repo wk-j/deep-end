@@ -7,15 +7,54 @@
 </head>
 
 <body>
+
     <div class="window">
+        <header class="toolbar toolbar-header">
+            <div class="toolbar-actions">
+                <button class="btn btn-default" id="facebookButton"> 
+                    <span class="icon icon-facebook icon-text"></span> Facebook
+                </button>
+                <button class="btn btn-default pull-right" id="closeButton">
+                    <span class="icon icon-cancel"></span>
+                </button>
+            </div>
+        </header>
+
         <div class="window-content">
-            <div class="pane-group">
-                <div class="pane">...</div>
-                <div class="pane">...</div>
-                <div class="pane">...</div>
+            <div class="pane c-menu">
+                <ul class="list-group">
+                    <li class="list-group-item active">
+                        <img class="img-circle media-object pull-left" src="images/photo.jpg" width="32" height="32">
+                        <div class="media-body">
+                            <strong>Deep End</strong>
+                            <p>Jannine Weigel</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <img class="img-circle media-object pull-left" src="images/photo.jpg" width="32" height="32">
+                        <div class="media-body">
+                            <strong>Heart Stop</strong>
+                            <p>Jannine Weigel</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <img class="img-circle media-object pull-left" src="images/photo.jpg" width="32" height="32">
+                        <div class="media-body">
+                            <strong>Strangled Love</strong>
+                            <p>Jannine Weigel</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="pane">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NCXfKyfpBKI?ecver=1" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
+        <footer class="toolbar toolbar-footer">
+            <h1 class="title">Deep End @2017</h1>
+        </footer>
     </div>
-</body>
 
+    <script src="js/render.js"></script>
+</body>
 </html>
