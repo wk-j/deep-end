@@ -15,3 +15,7 @@ links.forEach((x,i) => {
         links.filter(k => k != x).forEach(k => $(k).removeClass("active"));
     })
 });
+
+$("#facebookButton").click(() => {
+    window.open("https://www.facebook.com/JanninaW","_blank");
+});

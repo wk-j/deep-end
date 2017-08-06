@@ -1,9 +1,16 @@
 {
     "name": "deep-end",
+    "productName": "Deep End @2017",
     "version": "0.1.0",
     "main": "main.js",
     "devDependencies": {
         "electron": "^1.6.11",
+        "electron-packager": "^8.7.2"
+    },
+    "dependencies": {
         "jquery": "^3.2.1"
+    },
+    "scripts": {
+        "package": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=images/photo.icns --prune=true --out=builds"
     }
 }
