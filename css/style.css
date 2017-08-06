@@ -1,11 +1,7 @@
-
 * {
     cursor: pointer;
 }
 
-.c-menu {
-    width: 200px;
-}
 .pane { 
     overflow-y : visible;
 }

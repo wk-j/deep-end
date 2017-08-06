@@ -1,5 +1,5 @@
 {
-    "name": "deep-end",
+    "name": "deep-end-js",
     "productName": "Deep End @2017",
     "version": "0.1.0",
     "main": "main.js",
@@ -12,6 +12,6 @@
         "photonkit": "^0.1.2"
     },
     "scripts": {
-        "package": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=images/photo.icns --prune=true --out=builds"
+        "package": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=images/large-round.icns --prune=true --out=builds"
     }
 }

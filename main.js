@@ -8,13 +8,13 @@ function createWindow() {
     win = new BrowserWindow({ 
         icon: path.join(__dirname, "/images/photo.ico"),
         width: 800, height: 372 , titleBarStyle: "hidden"});
+
     win.loadURL(url.format({
         pathname: path.join(__dirname, "index.html"),
         protocol: "file",
         slashed: true
     }));
 
-    //win.webContents.openDevTools()
     win.on("closed", () => {
         win = null;
     });

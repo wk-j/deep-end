@@ -1,11 +1,16 @@
 const $ = require("jquery");
+
 const source = [
     "https://www.youtube.com/embed/NCXfKyfpBKI?ecver=1",
     "https://www.youtube.com/embed/lBN9VDFDvOk?ecver=1",
     "https://www.youtube.com/embed/zeP7bqMySmE?ecver=1",
 ];
 
-const links = ["#s1", "#s2", "#s3"];
+const links = [
+    "#s1", 
+    "#s2", 
+    "#s3"
+];
 
 links.forEach((x, i) => {
     const button = $(x);
